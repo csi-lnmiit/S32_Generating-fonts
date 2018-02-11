@@ -1,7 +1,7 @@
-##Generating Fonts
+## Generating Fonts
 We want to create a neural network that can generate characters or in other words we will create a font vector (latent vector) which defines a character and then we embed all fonts in a space where similar fonts have similar vectors.
-We are taking training data set from erikbern’s page where he has provided 50k fonts for analysis and reference purposes.
-Here's a link to the data:[Fonts data](https://drive.google.com/file/d/0B0GtwTQ6IF9AU3NOdzFzUWZ0aDQ/view)
+We are taking training data set from [Erikbern’s page](https://erikbern.com/2016/01/21/analyzing-50k-fonts-using-deep-neural-networks.html) where he has provided 50k fonts for analysis and reference purposes.
+Here's a link to the data which we are using  : [Fonts data](https://drive.google.com/file/d/0B0GtwTQ6IF9AU3NOdzFzUWZ0aDQ/view)
 
 All fonts need to be vertically aligned and scaled to fit bitmap and each character to be scaled to 64*64. 
 Some notes on model:
@@ -16,7 +16,7 @@ Some notes on model:
 - No dropout, didn’t seem to help. I did add some moderate Gaussian noise (of sigma 0.03) to the font vector and qualitatively it seemed to help a bit.
 - Very simple data augmentation by blurring the input randomly with sigma sampled from [0, 1]. My theory was that this would help fitting characters that have thin lines.
 
-###Requirements
+### Requirements
 - Python2.7
 - Lasagne
 - Theano
@@ -26,4 +26,4 @@ Some notes on model:
 - h5py
 - math
 
-###Training
+### Training
