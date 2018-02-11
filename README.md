@@ -3,12 +3,12 @@ We want to create a neural network that can generate characters or in other word
 
 ### Requirements
 - Python2.7
-- Lasagne
+- Lasagne(to build and train neural networks in Theano)
 - Theano
 - numpy
 - model
 - random
-- h5py
+- h5py(interface to the HDF5 binary data format)
 - math
 
 ### Training
