@@ -28,5 +28,3 @@ Some notes on model:
 - No dropout, didn’t seem to help. I did add some moderate Gaussian noise (of sigma 0.03) to the font vector and qualitatively it seemed to help a bit.
 - Very simple data augmentation by blurring the input randomly with sigma sampled from [0, 1]. My theory was that this would help fitting characters that have thin lines.
 
-For each pair below, the real character is on the left, the model output on the right.
-![](https://github.com/csi-lnmiit/S32_Generating-fonts/blob/master/model.png)
